@@ -6,7 +6,7 @@ dotenv.config();
 mongoose
   .connect(process.env.MONGO)
   .then(() => {
-    console.log("Connect to Database");
+    console.log("Connected to the Database");
   })
   .catch((err) => {
     console.log(err);
